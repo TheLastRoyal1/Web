@@ -1,0 +1,10 @@
+/**
+通过使用css来对用户登录界面进行美化,以及进行我们的id选择器进行层叠样式
+ */
+.text{
+    border: 1px solid red;
+    margin: 50px;
+    background-color: azure;
+    width: 300px;
+    height: 300px;
+}

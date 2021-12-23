@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--引用外部清除默认浏览器样式-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="./css/login.css">
+    <title>用户登录</title>
+
+</head>
+
+<body>
+    <div class="back" >
+    <div class="login">
+    <div class="left">
+    </div>
+    <section id="content">
+        <div class="all">
+            <div class="header">
+                <a href="javascript:;" class="current">登录</a>
+                <a href="javascript:;">注册</a>
+            </div>
+            <div id="body">
+                <div class="dom " style="display: block;">
+                    <div class="s1">
+                        <h>账号</h>
+                        <input type="text" name="username" id="name" placeholder="请输入用户名"></input>
+                        <br>
+                        <h>密码</h>
+                        <input type="password" name="password" id="psw" placeholder="请输入密码"></input>
+                        <input  type = "text" name="yzm" class="yzm" placeholder="请输入验证码">
+                        <span class = "box1" ></span>
+
+                        </input>
+                        <div class="bbb">
+                            <p></p>
+                            <button id="btn" >验证</button>
+                            <button id="btn" onclick="getname()">登录</button>
+                            <div class="non_user">
+                                <button id="btn" onclick="you()">游客登录</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dom " style="display: none;">
+                    <div class="s1">
+                        <h>账号</h>
+                        <input type="text" name="username" id="res_name" placeholder="请输入新用户名"></input>
+                        <h>密码</h>
+                        <input type="password" name="password" id="res_psw" placeholder="请设置用户密码"></input>
+                        <div class="bbb">
+                            <button id="btn" onclick="register()">注册</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+
+<script type="text/javascript" src="./js/login.js"></script>
+  <Script >
+      var btns = document.querySelector("button")
+      var ipt = document.querySelector(".yzm")
+      var div = document.querySelector(".box1")
+      var p =   document.querySelector('p')
+      div.innerHTML = Math.random().toString(36).substr(2).slice(0,4)
+      /*
+      * Math.random()   随机获取
+      * toString()      截取36个数 0-9 a-z
+      * substr()        字符串位移
+      * slice()         截取字符串 从第0个截取到第4个*/
+
+      div.oclick = function ()
+      {
+            div.innerHTML = Math.random().toString(36).substr(2).slice(0,4)
+      };
+      btns.onclick = function()
+      {
+          if(ipt.value == div.innerHTML)
+          {
+              p.innerHTML ="验证成功";
+              p.className='g'
+          }
+          else{
+              p.innerHTML ="验证失败";
+              p.className='r'
+          }
+      }
+  </Script>
+</body>
+
+</html>

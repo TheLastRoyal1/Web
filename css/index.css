@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px "宋体", Arial, Helvetica, sans-serif;
+    color: #666666;
+    background: url(../images/bg1.jpg) repeat;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*第一个nav*/
+.topnav {
+    position: fixed;
+    top: 0;
+    opacity: 0.5;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0 2px 2px #333333;
+    z-index: 1000;
+    font-size: 16px;
+}
+.topnav span{
+    margin: 0 5px;
+    color: #000000;
+}
+.topnav a{
+    color: #000000;
+    font-weight: bold;
+}
+
+/*导航栏头部*/
+.wapper {
+    width: 100%;
+    height: 1817px;
+    background: url("../images/footside.jpg") bottom center no-repeat;
+}
+.wapper .header{
+    height: 235px;
+    width: 100%;
+    background-image: url("../images/yuanshan.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.wapper .header .headtop {
+    height: 28px;
+    background: url("../images/topbg.jpg");
+}
+.wapper .header .contenttop {
+    position: relative;
+    width: 1000px;
+    height: 177px;
+    margin: 0 auto;
+}
+.wapper .header .contenttop .logohy{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    height: 30px;
+    font-size: 26px;
+}
+.wapper .header .contenttop .logohy span{
+    line-height: 30px;
+    font-family: "微软雅黑", sans-serif;
+    font-weight: bold;
+    color: #333333;
+}
+.wapper .header .contenttop .topsearch {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+
+}
+.wapper .header .contenttop .topsearch form input:first-child{
+    border: 1px solid #cccccc;
+}
+.wapper .header .contenttop .topsearch form input:hover,
+.wapper .header .contenttop .topsearch form input:focus{
+    border: 1px solid #888888;
+}
+.wapper .header .contenttop .nav{
+    position: absolute;
+    bottom: 0px;
+    width: 1500px;
+    height: 88px;
+    background-color: red;
+    margin-bottom: 15px;
+    background: url("../images/navbg.png") no-repeat;
+    line-height: 64px;
+    font-family: "微软雅黑";
+}
+.wapper .header .contenttop .nav ul li{
+    margin-left: 20px;
+    float: left;
+    width: 100px;
+    height: 46px;
+    margin-top: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.wapper .header .contenttop .nav  ul li a{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    outline: none;
+}
+.wapper .header .contenttop .nav ul li .xl{
+    position: relative;
+    z-index: 400;
+    bottom: 16px;
+    width: 100px;
+    display: none;
+}
+.wapper .header .contenttop .nav ul li .xl li{
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background: url(../images/footerbg.png);
+    text-align: center;
+    margin-left: 0px;
+    width:100px;
+    height: 28px;
+    float: none;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.wapper .header .contenttop .nav ul li .xl li:hover{
+    background: black;
+}
+
+.wapper .contop {
+    width: 1034px;
+    height: 14px;
+    margin: 0 auto;
+    background-image: url("../images/maintopbg.jpg");
+}
+/*文章区域*/
+.wapper .container {
+    width: 1000px;
+    overflow: hidden;
+    border-left: #d2d2d2 1px solid;
+    border-right: #d2d2d2 1px solid;
+    margin: auto;
+    background: #e5e5e5;
+}
+.wapper .container .aticle {
+    width: 620px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    float: left;
+}
+.wapper .container .aticle .writings {
+    width: 620px;
+}
+.wapper .container .aticle .writings h3 {
+    margin: 20px 0 10px 0;
+    color: #333;
+    font-size: 25px;
+    font-family: "脦垄脠铆脩脜潞脷";
+    font-weight: initial;
+}
+.wapper .container .aticle .writings .dataview {
+    /*float: left;*/
+    /*width: 70%;*/
+    width: 100%;
+    /*margin: 10px 0px 0 15px;*/
+    line-height: 20px;
+}
+.wapper .container .aticle .writings .dataview figure {
+    float: left;
+    /*width: 25%;*/
+}
+.wapper .container .aticle .writings .dataview figure img {
+    padding: 4px;
+    border: 1px solid #f4f2f2 ;
+    width: 140px;
+}
+.wapper .container .aticle .writings .dataview p{
+    width: 70%;
+    /*display: inline-block;*/
+    float: left;
+    margin: 10px 0px 0 15px;
+    text-indent: 2em;
+}
+.wapper .container .aticle .writings .dataview .readmore{
+    float: right;
+    background: #333;
+    color: #fff;
+    margin-top: 15px;
+    padding: 5px 10px;
+}
+.wapper .container .aticle .writings .dataview::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wapper .container .aticle .writings .datasource{
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 4.5px 0 0 0;
+    display: block;
+    color: #838383;
+    padding-left: 25px;
+    background: #f6f6f6 url(../images/time.jpg) 15px center no-repeat;
+}
+.wapper .container .aticle .writings .datasource span{
+    margin: 0px 10px;
+}
+.wapper .container .aticle .writings::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*右侧区域*/
+
+.wapper .container .rightbar{
+    width: 300px;
+    margin: 20px 20px 0 0;
+    float: right;
+}
+.wapper .container .rightbar .tit01{
+    font-size: 18px;
+    color: #ffffff;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 40px;
+    margin: 0 0 10px 0;
+    background: url(../images/rtitbg.png) no-repeat;
+}
+.wapper .container .rightbar .tit ul{
+    width: 100%;
+    overflow: hidden;
+}
+.wapper .container .rightbar .tit ul li {
+    width: 60px;
+    margin: 0 10px 0 5px;
+    float: left;
+    height: 73.5px;
+}
+.wapper .container .rightbar .tit ul li a{
+    width: 62px;
+    text-align: center;
+    padding-top: 60px;
+    color: #747F8C;
+    float: left;
+}
+.wapper .container .rightbar .tit ul li .email {
+    background: url(../images/gz01.png) no-repeat;
+}
+.wapper .container .rightbar .tit ul li .tel {
+    background: url(../images/gz02.png) no-repeat;
+}
+.wapper .container .rightbar .tit ul li .qq {
+    background: url(../images/gz03.png) no-repeat;
+}
+.wapper .container .rightbar .tit ul li .explain {
+    background: url(../images/gz04.png) no-repeat;
+}
+.wapper .container .rightbar .tit::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wapper .container .rightbar .tuwen{
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+}
+.wapper .container .rightbar .tuwen li{
+    /*这里是img浮动，需要消除浮动流*/
+    overflow: hidden;
+    /*display: inline-block;*/
+    width: 300px;
+    /*clear: both;*/
+    margin-bottom: 10px;
+
+}
+/*.wapper .container .rightbar .tuwen li::after{*/
+    /*这也是消除浮动的办法*/
+    /*content: '';*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
+.wapper .container .rightbar .tuwen li a img{
+    width: 70px;
+    margin-right: 15px;
+    float: left;
+}
+.wapper .container .rightbar .tuwen li a b{
+    font-weight: normal;
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+.wapper .container .rightbar .tuwen li p{
+    margin-top: 5px;
+}
+.wapper .container .rightbar .tuwen li p .tulamu,
+.wapper .container .rightbar .tuwen li p .tutime{
+    color: #999;
+    margin-right: 10px;
+    padding-left: 17px;
+}
+.wapper .container .rightbar .tuwen li p .tulamu{
+
+    background: url(../images/lanmbq.png) no-repeat center left;
+}
+/*.wapper .container .rightbar .tuwen li p .tulamu::before{*/
+    /*display: inline-block;*/
+    /*content: '';*/
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*background-color: red;*/
+    /*!*margin-right: 2px;*!*/
+    /*background: url(../img/lanmbq.png) no-repeat center;*/
+    /*vertical-align: -3.5px;*/
+/*}*/
+.wapper .container .rightbar .tuwen li p .tutime{
+    background: url(../images/datepng.png) no-repeat center left;
+}
+.wapper .container .rightbar .rank{
+    margin: 10px 0;
+}
+.wapper .container .rightbar .rank li{
+    width: 285px;
+    height: 25px;
+    padding-left: 15px;
+    background: url("../images/libg.jpg") center no-repeat;
+    background-position: left;
+    line-height: 25px;
+}
+.wapper .container .rightbar .rank li:first-child,
+.wapper .container .rightbar .rank li:nth-child(1),
+.wapper .container .rightbar .rank li:nth-child(2){
+    color: #ff0000;
+}
+.wapper .container .rightbar .me{
+    width: 300px;
+    margin: 30px 0;
+}
+.wapper .container .rightbar .me img{
+    width: 300px;
+}
+
+
+.wapper .conend{
+    background: url(../images/mainendbg.jpg) no-repeat;
+    width: 1034px;
+    margin: auto;
+    height: 14px;
+}
